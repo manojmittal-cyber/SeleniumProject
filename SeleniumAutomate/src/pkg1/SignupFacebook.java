@@ -48,5 +48,6 @@ public static void main(String[] args)
 	WebElement Signup=driver.findElement(By.cssSelector("button#u_0_13"));
 	Signup.click();	
 	
+	driver.quit();
 	}
 }
