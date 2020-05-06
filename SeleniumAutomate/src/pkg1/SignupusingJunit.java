@@ -15,7 +15,7 @@ public class SignupusingJunit
 	public void Browserlaunch()
 	{
 		System.setProperty("Webdriver.chrome.driver","C:\\Users\\mmitt\\OneDrive\\Desktop\\chromedriver.exe"); 
-		ChromeDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		
 		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
@@ -60,6 +60,7 @@ public class SignupusingJunit
 	@After
 	public void CloseBrowser()
 	{
-		driver.quit();
+		//System.out.println("sbc");
+		driver.close();
 	}
 }
