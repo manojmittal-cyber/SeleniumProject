@@ -4,26 +4,32 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SignupusingJunit 
 {
 	ChromeDriver driver;
 	@Before
-	public void Browserlaunch()
-	{
+	public void Browserlaunch() throws InterruptedException
+	{	
+		System.setProperty("Webdriver.chrome.silentOutput","true");
 		System.setProperty("Webdriver.chrome.driver","C:\\Users\\mmitt\\OneDrive\\Desktop\\chromedriver.exe"); 
 		driver=new ChromeDriver();
 		
 		driver.get("https://www.facebook.com");
+		//Thread.sleep(5000);
 		driver.manage().window().maximize();
-	}
-	
+	}	
 	@Test
 	public void EnterDetials()
 	{
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		WebElement fname= driver.findElement(By.name("firstname"));
 		fname.sendKeys("Aksh");
 		
@@ -55,12 +61,16 @@ public class SignupusingJunit
 		Gender.click();
 		
 		WebElement Signup=driver.findElement(By.cssSelector("button#u_0_13"));
+		//WebDriverWait w=new WebDriverWait(driver, 5);
+		//w.until(ExpectedConditions.elementToBeClickable(Signup));
+		//w.until(ExpectedConditions.textToBePresentInElement(Signup, "signup"));
+		//w.until(ExpectedConditions.visibilityOf(Signup));
 		Signup.click();	
 	}
 	@After
 	public void CloseBrowser()
 	{
-		//System.out.println("sbc");
+		//System.out.println("abc");
 		driver.close();
 	}
 }

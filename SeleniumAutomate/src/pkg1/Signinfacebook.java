@@ -8,6 +8,7 @@ public class Signinfacebook
 {
 	public static void main(String[] args) 
 	{
+		System.setProperty("Webdriver.chrome.silentOutput","true");
 		System.setProperty("Webdriver.chrome.driver","C:\\Users\\mmitt\\OneDrive\\Desktop\\chromedriver.exe"); 
 		ChromeDriver driver=new ChromeDriver();
 		

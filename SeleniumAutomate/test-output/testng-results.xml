@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="55" started-at="2020-05-06T19:28:30Z" finished-at="2020-05-06T19:28:30Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="55" started-at="2020-05-06T19:28:30Z" finished-at="2020-05-06T19:28:30Z">
+      <class name="TestNGPkg.ClassA">
+        <test-method status="PASS" signature="First()[pri:0, instance:TestNGPkg.ClassA@5c3bd550]" name="First" duration-ms="3" started-at="2020-05-07T00:58:30Z" finished-at="2020-05-07T00:58:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- First -->
+      </class> <!-- TestNGPkg.ClassA -->
+      <class name="TestNGPkg.ClassB">
+        <test-method status="PASS" signature="second()[pri:0, instance:TestNGPkg.ClassB@91161c7]" name="second" duration-ms="3" started-at="2020-05-07T00:58:30Z" finished-at="2020-05-07T00:58:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second -->
+      </class> <!-- TestNGPkg.ClassB -->
+      <class name="TestNGPkg.ClassC">
+        <test-method status="PASS" signature="third()[pri:0, instance:TestNGPkg.ClassC@29774679]" name="third" duration-ms="18" started-at="2020-05-07T00:58:30Z" finished-at="2020-05-07T00:58:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third -->
+      </class> <!-- TestNGPkg.ClassC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
